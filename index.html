@@ -67,17 +67,29 @@
 	<!--================ S-FIND-BIKE ================-->
 	<section class="s-find-bike">
 		<div class="container">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.1.1/iframeResizer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.1.1/iframeResizer.min.js"></script>
 <div>
-<iframe id="brm-online-booking" src="https://app.bikerentalmanager.com/book.html?shop=mallorcatourbikerental&iframe_resizer=4.1.1" style="width: 1px;min-width: 100%;" frameborder="no" scrolling="no"></iframe>
+  <iframe
+    title="Live booking"
+    id="brm-online-booking"
+    src="https://app.bikerentalmanager.com/book.html?shop=mallorcatourbikerental&iframe_resizer=4.1.1"
+    style="width: 1px; min-width: 100%; height: 92vh"
+    frameborder="no"
+    allow="payment"
+  ></iframe>
 </div>
 <script type="text/javascript">
-iFrameResize({
-                heightCalculationMethod: "taggedElement",
-                checkOrigin: false
-}, '#brm-online-booking');
+  iFrameResize(
+    {
+      heightCalculationMethod: 'taggedElement',
+      checkOrigin: false,
+      scrolling: true,
+      maxHeight: 92vh
+    },
+    '#brm-online-booking'
+  );
 </script>
-		</div>
+</div>
 	</section>
 	<!--============== S-FIND-BIKE END ==============-->
 	<!--===================== TO TOP =====================-->
